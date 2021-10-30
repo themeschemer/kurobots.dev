@@ -1,0 +1,45 @@
+/* Fonts */
+
+@font-face {
+  font-family: Akira;
+  src: url("akira.otf");
+}
+
+@font-face {
+  font-family: Sofia;
+  src: url("sofiapro.otf");
+}
+
+/* Global CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: white;
+  background: url("https://u.cubeupload.com/Shocked/KUROWallpaper.png");
+  background-color: black;
+  background-size: cover;
+}
+
+div {
+  margin-top: 300px;
+  margin-left: 100px;
+}
+
+h1 {
+  color: #5D5FEF;
+  font-size: 64px;
+  font-family: Akira;
+}
+
+p {
+  font-size: 24px;
+  font-family: Sofia;
+}
+
+em {
+  opacity: 0.7;
+}
