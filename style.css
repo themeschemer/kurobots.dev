@@ -10,6 +10,16 @@
   src: url("sofiapro.otf");
 }
 
+@font-face {
+  font-family: Ginto;
+  src: url("gintonord.woff2");
+}
+
+@font-face {
+  font-family: Panic;
+  src: url("panic.ttf");
+}
+
 /* Global CSS */
 
 * {
@@ -17,29 +27,248 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  color: white;
-  background: url("https://u.cubeupload.com/Shocked/KUROWallpaper.png");
-  background-color: black;
+  background: #5D5FEF;
   background-size: cover;
 }
 
-div {
-  margin-top: 300px;
-  margin-left: 100px;
-}
-
 h1 {
-  color: #5D5FEF;
-  font-size: 64px;
+  color: #212130;
   font-family: Akira;
 }
 
 p {
-  font-size: 24px;
   font-family: Sofia;
 }
 
-em {
-  opacity: 0.7;
+::selection {
+  color: white;
+  background: #5D5FEF;
 }
+
+a {
+  color: #5D5FEF;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+/* Desktop CSS */
+
+.desktop {
+  width: 100vw;
+  height: 100%;
+  display: block;
+  background: white;
+}
+
+.desktop .navbar {
+  width: 100vw;
+  height: 100px;
+  position: fixed;
+  background: white;
+  margin-top: -100px;
+}
+
+.desktop .navcontent {
+  display: flex;
+  font-family: Sofia;
+  align-items: center;
+  justify-content: center;
+}
+
+.desktop .navcontent img {
+  margin-top: 20px;
+  margin-right: 200px;
+}
+
+.desktop .navcontent a {
+  color: black;
+  font-size: 20px;
+  margin-top: 25px;
+  margin-left: 15px;
+  transition: 0.5s;
+}
+
+.desktop .navcontent a:hover {
+  color: #5D5FEF;
+}
+
+.desktop .navcontent button {
+  border: none;
+  outline: none;
+  font-size: 18px;
+  transition: 0.5s;
+  margin-left: 5px;
+  font-family: Akira;
+  background: #5D5FEF;
+  border-radius: 18px;
+  padding: 15px 20px 15px 20px;
+}
+
+.desktop .navcontent button:hover {
+  opacity: 0.7;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.desktop .navdivider {
+  width: 95vw;
+  height: 2px;
+  margin-top: 100px;
+  background: #EDEDED;
+}
+
+.desktop h1 {
+  font-size: 40px;
+}
+
+.desktop p {
+  font-size: 22px;
+}
+
+.desktop .home {
+  margin-top: 130px;
+}
+
+.desktop .btn-purple {
+  outline: none;
+  color: #5D5FEF;
+  font-size: 18px;
+  overflow: hidden;
+  transition: 0.5s;
+  background: none;
+  font-family: Akira;
+  border-radius: 18px;
+  border: 2px solid #5D5FEF;
+  padding: 15px 20px 15px 20px;
+}
+
+.desktop .btn-purple:hover {
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  background: #5D5FEF;
+}
+
+.desktop .btn-black {
+  outline: none;
+  color: #212130;
+  font-size: 18px;
+  overflow: hidden;
+  transition: 0.5s;
+  background: none;
+  font-family: Akira;
+  border-radius: 18px;
+  border: 2px solid #212130;
+  padding: 15px 20px 15px 20px;
+}
+
+.desktop .btn-black:hover {
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  background: #212130;
+}
+
+.desktop .btn-white {
+  color: white;
+  outline: none;
+  font-size: 18px;
+  overflow: hidden;
+  transition: 0.5s;
+  background: none;
+  font-family: Akira;
+  border-radius: 18px;
+  border: 2px solid white;
+  padding: 15px 20px 15px 20px;
+}
+
+.desktop .btn-white:hover {
+  color: #212130;
+  cursor: pointer;
+  border-radius: 5px;
+  background: white;
+}
+
+.desktop .about {
+  margin-top: 300px;
+}
+
+.desktop .column {
+  float: left;
+  width: 50%;
+}
+
+.desktop .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.desktop .team {
+  width: 100vw;
+  height: 370px;
+  margin-top: 200px;
+  background: #212130;
+}
+
+.desktop .contact {
+  width: 100vw;
+  height: 370px;
+  background: url('https://www.kurobots.dev/images/code.png');
+  background-size: cover;
+  background-color: black;
+  background-attachment: fixed;
+  background-position-y: 100px;
+}
+
+.desktop .footer {
+  color: white;
+  width: 100vw;
+  height: 520px;
+  background: black;
+}
+
+.desktop .four {
+  float: left;
+  width: 25%;
+}
+
+.desktop .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Mobile CSS */
